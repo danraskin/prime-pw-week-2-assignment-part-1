@@ -17,7 +17,12 @@ console.log("I, "+ fullName + ", am an avid consumer of tamales, and just today 
 // Refer back to the videos if you need help with this one.
 
 // 7 - Create a variable named `adventurous` and set it to a boolean value (true or false)
-let adventurous = true;
+let adventurous = prompt("Are you feeling adventurous? Please type 'yes' or 'no'");
+if (adventurous == 'yes') {
+    adventurous = true;
+} else {
+    adventurous = false;
+}
 // 8 - Create a variable named `food`, and set its value to a string of your favorite food
 let food = "smoked fish";
 // 9 - Create a variable called `pets` and set it to the value of the number of pets you have
@@ -30,12 +35,10 @@ pets += 2;
 // 12 - Create a constant variable called `allowedPets` and set it to a number value of your choice
 allowedPets = 4;
 // 13 - Create a conditional: if adventurous is true, console log "Adventures are great!",
-if(adventurous = true){
-    console.log("Adventures in food and life are mandatory for a full experience");
-}
 // if it's not true, console log "How about we stay home?"
-
-else{
+if(adventurous == true){
+    console.log("Adventures in food and life are mandatory for a full experience");
+} else{
     console.log("I guess you could sit there keeping the kiddie pool warm... loser.");
 }
 
@@ -93,4 +96,6 @@ if(pets > friendsPets){
 
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
 
+let message = (adventurous == true) ? "Adventures in food and life are mandatory for a full experience" : "I guess you could sit there keeping the kiddie pool warm... loser.";
+console.log(message);
 

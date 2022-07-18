@@ -94,6 +94,18 @@ if(pets > friendsPets){
 //      Otherwise, log "Luck is what happens when preparation meets opportunity"
 //      You'll need to research how to use switch statements!
 
+switch (true){
+    case (numberTamales <= 5):
+        console.log(`${numberTamales} is a healthy amount to eat every single day of your precious, beautiful life. Keep it up!`);
+        break;
+    case (numberTamales > 5 && numberTamales <= 10):
+        console.log(`${numberTamales} is a lot. I'd recommend only eating this many once a week. Try and pull back`);
+        break;
+    case (numberTamales > 10):
+        console.log(`STOP! ${numberTamales} is tooooooo many!`);
+        break;
+}
+
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
 
 let message = (adventurous == true) ? "Adventures in food and life are mandatory for a full experience" : "I guess you could sit there keeping the kiddie pool warm... loser.";
